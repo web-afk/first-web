@@ -98,21 +98,117 @@ header.cabecera .actual{
 
 .all{
     width: 100%;
-    height: 700px;
+    height: 900px;
     display: flex;
  
 }
 .todo{
-    width: 50%;
-    height: 500px;
+    width: 70%;
+    height: 720px;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(0px, 200px);
+
+}
+
+.uno{
+    grid-column: 1/4;
+    grid-row: 1;
+    border: #0D0D0D 1px solid;
+}
+
+.dos{
+    grid-column: 1/4;
+    grid-row: 2;
+    border: #0D0D0D 1px solid;
+}
+
+
+.cuatro{
+    grid-column: 1/4;
+    grid-row: 3;
+    border: #0D0D0D 1px solid;
+}
+
+
+div span i.fa-check{
+    color: #1e9933;
+}
+
+div span i.fa-times{
+    color: #ff0000;
+}
+
+.uno,
+.cuatro,
+.dos{
+    display: flex;
+    height: 200px;
+}
+
+div div.titu
+{
     background-color: #0D0D0D;
     color: #F2F2F2;
-    border-radius: 20px;
+    overflow: hidden;
+}
 
+ div.titu
+{
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border: #F2F2F2 solid 6px;
+    
+}
+
+div div.contenido{
+    width: 70%;
+    height: 100%;
+    background-color: #404040;
+    display: flex;
+    padding: 10px;
+    border: #F2F2F2 solid 6px;
+    border-left: none;
+}
+
+div div.contenido span{
+    color: #F2F2F2;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div div.contenido span.costo{
+    font-weight: bold;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding: 5px;
+    border: #F2F2F2 2px solid;
+}
+
+div div.contenido span.costo:hover{
+    background: #F2F2F2;
+    color: #0D0D0D;
+    border: #0d0d0d 2px solid;
+    transition: 0.2s;
+}
+
+div div.contenido span.costo:active{
+    transform: scale(0.8);
+}
+
+
+div.cuatro div.titu h2{
+    padding-left: 45px;
 }
 
 label{
